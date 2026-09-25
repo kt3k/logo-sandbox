@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>twill — Idea 6</title>
+<style>
+  :root { --ink:#0c4a6e; --muted:#64748b; --bg:#f0f9ff; --card:#fff; --line:rgba(0,0,0,.08); }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width:960px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:14px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 24px; }
+  .hero { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:64px 24px; display:flex; align-items:center; justify-content:center; gap:28px; flex-wrap:wrap; }
+  .word { font-family:"Inter",system-ui,sans-serif; font-size:64px; font-weight:800; letter-spacing:-.04em; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-top:16px; }
+  .tile { border-radius:16px; padding:32px; display:flex; align-items:center; justify-content:center; gap:12px; min-height:160px; border:1px solid var(--line); }
+  .dark { background:#0b0f19; color:#f8fafc; border-color:#0b0f19; }
+  .brand { background:#0284c7; border-color:#0284c7; }
+  .sizes { background:var(--card); }
+  p { color:var(--muted); line-height:1.7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>twill · Idea 6 · herringbone — a variant of twill</h1>
+
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      
+      <symbol id="mark" viewBox="0 0 100 100"><clipPath id="hb"><rect x="6" y="6" width="88" height="88" rx="20"/></clipPath><g clip-path="url(#hb)"><rect x="0" y="0" width="100" height="100" fill="var(--b,#e0f2fe)"/><clipPath id="hc0"><rect x="7.5" y="0" width="19" height="100"/></clipPath><g clip-path="url(#hc0)" stroke="var(--a,#0284c7)" stroke-width="6"><line x1="6" y1="-40" x2="28" y2="-62"/><line x1="6" y1="-27" x2="28" y2="-49"/><line x1="6" y1="-14" x2="28" y2="-36"/><line x1="6" y1="-1" x2="28" y2="-23"/><line x1="6" y1="12" x2="28" y2="-10"/><line x1="6" y1="25" x2="28" y2="3"/><line x1="6" y1="38" x2="28" y2="16"/><line x1="6" y1="51" x2="28" y2="29"/><line x1="6" y1="64" x2="28" y2="42"/><line x1="6" y1="77" x2="28" y2="55"/><line x1="6" y1="90" x2="28" y2="68"/><line x1="6" y1="103" x2="28" y2="81"/><line x1="6" y1="116" x2="28" y2="94"/><line x1="6" y1="129" x2="28" y2="107"/><line x1="6" y1="142" x2="28" y2="120"/></g><clipPath id="hc1"><rect x="29.5" y="0" width="19" height="100"/></clipPath><g clip-path="url(#hc1)" stroke="var(--a,#0284c7)" stroke-width="6"><line x1="28" y1="-62" x2="50" y2="-40"/><line x1="28" y1="-49" x2="50" y2="-27"/><line x1="28" y1="-36" x2="50" y2="-14"/><line x1="28" y1="-23" x2="50" y2="-1"/><line x1="28" y1="-10" x2="50" y2="12"/><line x1="28" y1="3" x2="50" y2="25"/><line x1="28" y1="16" x2="50" y2="38"/><line x1="28" y1="29" x2="50" y2="51"/><line x1="28" y1="42" x2="50" y2="64"/><line x1="28" y1="55" x2="50" y2="77"/><line x1="28" y1="68" x2="50" y2="90"/><line x1="28" y1="81" x2="50" y2="103"/><line x1="28" y1="94" x2="50" y2="116"/><line x1="28" y1="107" x2="50" y2="129"/><line x1="28" y1="120" x2="50" y2="142"/></g><clipPath id="hc2"><rect x="51.5" y="0" width="19" height="100"/></clipPath><g clip-path="url(#hc2)" stroke="var(--a,#0284c7)" stroke-width="6"><line x1="50" y1="-40" x2="72" y2="-62"/><line x1="50" y1="-27" x2="72" y2="-49"/><line x1="50" y1="-14" x2="72" y2="-36"/><line x1="50" y1="-1" x2="72" y2="-23"/><line x1="50" y1="12" x2="72" y2="-10"/><line x1="50" y1="25" x2="72" y2="3"/><line x1="50" y1="38" x2="72" y2="16"/><line x1="50" y1="51" x2="72" y2="29"/><line x1="50" y1="64" x2="72" y2="42"/><line x1="50" y1="77" x2="72" y2="55"/><line x1="50" y1="90" x2="72" y2="68"/><line x1="50" y1="103" x2="72" y2="81"/><line x1="50" y1="116" x2="72" y2="94"/><line x1="50" y1="129" x2="72" y2="107"/><line x1="50" y1="142" x2="72" y2="120"/></g><clipPath id="hc3"><rect x="73.5" y="0" width="19" height="100"/></clipPath><g clip-path="url(#hc3)" stroke="var(--a,#0284c7)" stroke-width="6"><line x1="72" y1="-62" x2="94" y2="-40"/><line x1="72" y1="-49" x2="94" y2="-27"/><line x1="72" y1="-36" x2="94" y2="-14"/><line x1="72" y1="-23" x2="94" y2="-1"/><line x1="72" y1="-10" x2="94" y2="12"/><line x1="72" y1="3" x2="94" y2="25"/><line x1="72" y1="16" x2="94" y2="38"/><line x1="72" y1="29" x2="94" y2="51"/><line x1="72" y1="42" x2="94" y2="64"/><line x1="72" y1="55" x2="94" y2="77"/><line x1="72" y1="68" x2="94" y2="90"/><line x1="72" y1="81" x2="94" y2="103"/><line x1="72" y1="94" x2="94" y2="116"/><line x1="72" y1="107" x2="94" y2="129"/><line x1="72" y1="120" x2="94" y2="142"/></g></g></symbol>
+    </defs>
+  </svg>
+
+  <section class="hero">
+    <svg width="120" height="120"><use href="#mark"/></svg>
+    <div class="word">twill</div>
+  </section>
+
+  <div class="grid">
+    <div class="tile dark">
+      <svg width="56" height="56" style="--b:#0c4a6e;--a:#38bdf8"><use href="#mark"/></svg>
+      <div class="word" style="font-size:32px">twill</div>
+    </div>
+    <div class="tile brand">
+      <svg width="88" height="88" style="--b:#0284c7;--a:#fff"><use href="#mark"/></svg>
+    </div>
+    <div class="tile sizes">
+      <svg width="64" height="64"><use href="#mark"/></svg>
+      <svg width="32" height="32"><use href="#mark"/></svg>
+      <svg width="16" height="16"><use href="#mark"/></svg>
+    </div>
+  </div>
+
+  <p>Herringbone, a variant of twill, drawn inside a rounded square: columns of diagonal stripes that alternate direction. Each column stands for one small class, and together they make a single pattern. A classic textile motif that fits a CSS tool well.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>twill — Idea 7</title>
+<style>
+  :root { --ink:#3b0764; --muted:#64748b; --bg:#fdf4ff; --card:#fff; --line:rgba(0,0,0,.08); }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width:960px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:14px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 24px; }
+  .hero { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:64px 24px; display:flex; align-items:center; justify-content:center; gap:28px; flex-wrap:wrap; }
+  .word { font-family:system-ui,-apple-system,"Segoe UI",sans-serif; font-size:64px; font-weight:800; letter-spacing:-.04em; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-top:16px; }
+  .tile { border-radius:16px; padding:32px; display:flex; align-items:center; justify-content:center; gap:12px; min-height:160px; border:1px solid var(--line); }
+  .dark { background:#0b0f19; color:#f8fafc; border-color:#0b0f19; }
+  .brand { background:#7c3aed; border-color:#7c3aed; }
+  .sizes { background:var(--card); }
+  p { color:var(--muted); line-height:1.7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>twill · Idea 7 · woven # — a hash that weaves over and under</h1>
+
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      
+      <symbol id="mark" viewBox="0 0 100 100"><clipPath id="band"><rect x="0" y="27" width="100" height="18"/><rect x="0" y="55" width="100" height="18"/></clipPath><line x1="12" y1="36" x2="88" y2="36" stroke="var(--a,#c026d3)" stroke-width="12" stroke-linecap="round"/><line x1="12" y1="64" x2="88" y2="64" stroke="var(--a,#c026d3)" stroke-width="12" stroke-linecap="round"/><line x1="46" y1="10" x2="34" y2="90" stroke="var(--g,#fff)" stroke-width="22" stroke-dasharray="0" stroke-linecap="butt" clip-path="url(#band)"/><line x1="46" y1="10" x2="34" y2="90" stroke="var(--b,#7c3aed)" stroke-width="12" stroke-linecap="round"/><line x1="74" y1="10" x2="62" y2="90" stroke="var(--g,#fff)" stroke-width="22" stroke-dasharray="0" stroke-linecap="butt" clip-path="url(#band)"/><line x1="74" y1="10" x2="62" y2="90" stroke="var(--b,#7c3aed)" stroke-width="12" stroke-linecap="round"/><line x1="61.099999999999994" y1="36" x2="79.1" y2="36" stroke="var(--g,#fff)" stroke-width="22" stroke-linecap="butt"/><line x1="57.099999999999994" y1="36" x2="83.1" y2="36" stroke="var(--a,#c026d3)" stroke-width="12"/><line x1="28.9" y1="64" x2="46.9" y2="64" stroke="var(--g,#fff)" stroke-width="22" stroke-linecap="butt"/><line x1="24.9" y1="64" x2="50.9" y2="64" stroke="var(--a,#c026d3)" stroke-width="12"/></symbol>
+    </defs>
+  </svg>
+
+  <section class="hero">
+    <svg width="120" height="120"><use href="#mark"/></svg>
+    <div class="word">twill</div>
+  </section>
+
+  <div class="grid">
+    <div class="tile dark">
+      <svg width="56" height="56" style="--g:#0b0f19;--a:#e879f9;--b:#a78bfa"><use href="#mark"/></svg>
+      <div class="word" style="font-size:32px">twill</div>
+    </div>
+    <div class="tile brand">
+      <svg width="88" height="88" style="--g:#7c3aed;--a:#fff;--b:#fff"><use href="#mark"/></svg>
+    </div>
+    <div class="tile sizes">
+      <svg width="64" height="64"><use href="#mark"/></svg>
+      <svg width="32" height="32"><use href="#mark"/></svg>
+      <svg width="16" height="16"><use href="#mark"/></svg>
+    </div>
+  </div>
+
+  <p>A slanted hash made of four threads that cross over and under in alternation, just like real weaving. It hints at CSS selectors (#) and at a woven fabric at once. The small gaps at each crossing are what show the weave.</p>
+</main>
+</body>
+</html>
