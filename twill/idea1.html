@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>twill — Idea 1</title>
+<style>
+  :root { --ink:#0f172a; --muted:#64748b; --bg:#ecfeff; --card:#fff; --line:rgba(0,0,0,.08); }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width:960px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:14px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 24px; }
+  .hero { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:64px 24px; display:flex; align-items:center; justify-content:center; gap:28px; flex-wrap:wrap; }
+  .word { font-family:ui-monospace,"JetBrains Mono",Menlo,monospace; font-size:64px; font-weight:800; letter-spacing:-.04em; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-top:16px; }
+  .tile { border-radius:16px; padding:32px; display:flex; align-items:center; justify-content:center; gap:12px; min-height:160px; border:1px solid var(--line); }
+  .dark { background:#0b0f19; color:#f8fafc; border-color:#0b0f19; }
+  .brand { background:#06b6d4; border-color:#06b6d4; }
+  .sizes { background:var(--card); }
+  p { color:var(--muted); line-height:1.7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>twill · Idea 1 · atom T — a T built from dots</h1>
+
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      
+      <symbol id="mark" viewBox="0 0 100 100"><circle cx="10" cy="18" r="9" fill="var(--a,#0f172a)"/><circle cx="30" cy="18" r="9" fill="var(--a,#0f172a)"/><circle cx="50" cy="18" r="9" fill="var(--a,#0f172a)"/><circle cx="70" cy="18" r="9" fill="var(--a,#0f172a)"/><circle cx="90" cy="18" r="9" fill="var(--a,#0f172a)"/><circle cx="50" cy="40" r="9" fill="var(--a,#0f172a)"/><circle cx="50" cy="62" r="9" fill="var(--a,#0f172a)"/><circle cx="50" cy="84" r="9" fill="var(--b,#06b6d4)"/></symbol>
+    </defs>
+  </svg>
+
+  <section class="hero">
+    <svg width="120" height="120"><use href="#mark"/></svg>
+    <div class="word">twill<span style="color:#06b6d4">_</span></div>
+  </section>
+
+  <div class="grid">
+    <div class="tile dark">
+      <svg width="56" height="56" style="--a:#f8fafc;--b:#22d3ee"><use href="#mark"/></svg>
+      <div class="word" style="font-size:32px">twill<span style="color:#06b6d4">_</span></div>
+    </div>
+    <div class="tile brand">
+      <svg width="88" height="88" style="--a:#fff;--b:#0f172a"><use href="#mark"/></svg>
+    </div>
+    <div class="tile sizes">
+      <svg width="64" height="64"><use href="#mark"/></svg>
+      <svg width="32" height="32"><use href="#mark"/></svg>
+      <svg width="16" height="16"><use href="#mark"/></svg>
+    </div>
+  </div>
+
+  <p>The letter T made of identical dots (atoms), with only the last one in the accent color, like "the one class you just added". A monospace wordmark with an underscore cursor, for a developer-tool feel.</p>
+</main>
+</body>
+</html>

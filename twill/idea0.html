@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>twill — Idea 0</title>
+<style>
+  :root { --ink:#1e1b4b; --muted:#64748b; --bg:#eef2ff; --card:#fff; --line:rgba(0,0,0,.08); }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width:960px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:14px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 24px; }
+  .hero { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:64px 24px; display:flex; align-items:center; justify-content:center; gap:28px; flex-wrap:wrap; }
+  .word { font-family:"Inter",system-ui,sans-serif; font-size:64px; font-weight:800; letter-spacing:-.04em; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-top:16px; }
+  .tile { border-radius:16px; padding:32px; display:flex; align-items:center; justify-content:center; gap:12px; min-height:160px; border:1px solid var(--line); }
+  .dark { background:#0b0f19; color:#f8fafc; border-color:#0b0f19; }
+  .brand { background:#4f46e5; border-color:#4f46e5; }
+  .sizes { background:var(--card); }
+  p { color:var(--muted); line-height:1.7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>twill · Idea 0 · weave — a twill weave of atoms</h1>
+
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      
+      <symbol id="mark" viewBox="0 0 100 100"><clipPath id="wc"><rect x="4" y="4" width="92" height="92" rx="22"/></clipPath><g clip-path="url(#wc)"><rect x="4.0" y="4.0" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="19.5" y="4.0" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="35.0" y="4.0" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="50.5" y="4.0" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="66.0" y="4.0" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="81.5" y="4.0" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="4.0" y="19.5" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="19.5" y="19.5" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="35.0" y="19.5" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="50.5" y="19.5" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="66.0" y="19.5" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="81.5" y="19.5" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="4.0" y="35.0" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="19.5" y="35.0" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="35.0" y="35.0" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="50.5" y="35.0" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="66.0" y="35.0" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="81.5" y="35.0" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="4.0" y="50.5" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="19.5" y="50.5" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="35.0" y="50.5" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="50.5" y="50.5" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="66.0" y="50.5" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="81.5" y="50.5" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="4.0" y="66.0" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="19.5" y="66.0" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="35.0" y="66.0" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="50.5" y="66.0" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="66.0" y="66.0" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="81.5" y="66.0" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="4.0" y="81.5" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="19.5" y="81.5" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="35.0" y="81.5" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/><rect x="50.5" y="81.5" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="66.0" y="81.5" width="14" height="14" rx="3" fill="var(--a,#4f46e5)"/><rect x="81.5" y="81.5" width="14" height="14" rx="3" fill="var(--b,#c7d2fe)"/></g></symbol>
+    </defs>
+  </svg>
+
+  <section class="hero">
+    <svg width="120" height="120"><use href="#mark"/></svg>
+    <div class="word">twill</div>
+  </section>
+
+  <div class="grid">
+    <div class="tile dark">
+      <svg width="56" height="56" style="--b:#312e81;--a:#818cf8"><use href="#mark"/></svg>
+      <div class="word" style="font-size:32px">twill</div>
+    </div>
+    <div class="tile brand">
+      <svg width="88" height="88" style="--a:#fff;--b:rgba(255,255,255,.28)"><use href="#mark"/></svg>
+    </div>
+    <div class="tile sizes">
+      <svg width="64" height="64"><use href="#mark"/></svg>
+      <svg width="32" height="32"><use href="#mark"/></svg>
+      <svg width="16" height="16"><use href="#mark"/></svg>
+    </div>
+  </div>
+
+  <p>A 6×6 grid of small tiles (the atoms, i.e. utility classes), with the filled ones laid out in the diagonal 2/2 pattern of twill fabric. The idea: lots of tiny classes woven together make one fabric (UI). It also reads at 16px as simple diagonal stripes.</p>
+</main>
+</body>
+</html>
