@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idea 4 — streamly</title>
+<style>
+  :root { --ink:#134e4a; --muted:#64748b; --bg:#f0fdfa; --card:#fff; --line:rgba(0,0,0,.08); }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width:960px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:14px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 24px; }
+  .hero { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:64px 24px; display:flex; align-items:center; justify-content:center; gap:28px; flex-wrap:wrap; }
+  .word { font-family:"Inter",system-ui,sans-serif; font-size:64px; font-weight:800; letter-spacing:-.04em; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-top:16px; }
+  .tile { border-radius:16px; padding:32px; display:flex; align-items:center; justify-content:center; gap:12px; min-height:160px; border:1px solid var(--line); }
+  .dark { background:#0b0f19; color:#f8fafc; border-color:#0b0f19; }
+  .brand { background:#134e4a; border-color:#134e4a; }
+  .sizes { background:var(--card); }
+  p { color:var(--muted); line-height:1.7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Idea 4 · streamly — flowing data</h1>
+
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      
+      <symbol id="mark" viewBox="0 0 100 100"><path d="M10 30 C28 14 42 46 60 30 S84 16 90 30" fill="none" stroke="var(--a,#06b6d4)" stroke-width="9" stroke-linecap="round"/><path d="M10 50 C28 34 42 66 60 50 S84 36 90 50" fill="none" stroke="var(--b,#6366f1)" stroke-width="9" stroke-linecap="round"/><path d="M10 70 C28 54 42 86 60 70 S84 56 90 70" fill="none" stroke="var(--c,#a855f7)" stroke-width="9" stroke-linecap="round"/></symbol>
+    </defs>
+  </svg>
+
+  <section class="hero">
+    <svg width="120" height="120"><use href="#mark"/></svg>
+    <div class="word">stream<span style="color:#6366f1">ly</span></div>
+  </section>
+
+  <div class="grid">
+    <div class="tile dark">
+      <svg width="56" height="56" style="--a:#22d3ee;--b:#818cf8;--c:#c084fc"><use href="#mark"/></svg>
+      <div class="word" style="font-size:32px">stream<span style="color:#6366f1">ly</span></div>
+    </div>
+    <div class="tile brand">
+      <svg width="88" height="88" style="--a:#fff;--b:rgba(255,255,255,.75);--c:rgba(255,255,255,.5)"><use href="#mark"/></svg>
+    </div>
+    <div class="tile sizes">
+      <svg width="64" height="64"><use href="#mark"/></svg>
+      <svg width="32" height="32"><use href="#mark"/></svg>
+      <svg width="16" height="16"><use href="#mark"/></svg>
+    </div>
+  </div>
+
+  <p>Three waves in parallel: "data flowing through". Suits a streaming, event-processing or reactive library.</p>
+</main>
+</body>
+</html>
