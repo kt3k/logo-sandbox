@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idea 2 — orbitra</title>
+<style>
+  :root { --ink:#1e1b4b; --muted:#6b7280; --bg:#f5f3ff; --card:#fff; --line:#e9e5ff; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width:960px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:14px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 24px; }
+  .hero { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:64px 24px; display:flex; align-items:center; justify-content:center; gap:24px; flex-wrap:wrap; }
+  .word { font-size:60px; font-weight:700; letter-spacing:-.03em; background:linear-gradient(90deg,#7c3aed,#ec4899); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-top:16px; }
+  .tile { border-radius:16px; padding:32px; display:flex; align-items:center; justify-content:center; gap:12px; min-height:160px; border:1px solid var(--line); }
+  .dark { background:#13111c; border-color:#13111c; }
+  .dark .word { background:none; color:#f5f3ff; }
+  .brand { background:linear-gradient(135deg,#7c3aed,#ec4899); border:none; }
+  .sizes { background:var(--card); }
+  p { color:var(--muted); line-height:1.7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Idea 2 · orbitra — planet &amp; orbits</h1>
+
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#ec4899"/>
+      </linearGradient>
+      <symbol id="mark" viewBox="0 0 100 100">
+        <g transform="rotate(-30 50 50)">
+          <ellipse cx="50" cy="50" rx="44" ry="18" fill="none" stroke="url(#g2)" stroke-width="6"/>
+          <circle cx="50" cy="50" r="20" fill="url(#g2)" transform="rotate(30 50 50)"/>
+          <circle r="7" fill="#f59e0b">
+            <animateMotion dur="8s" repeatCount="indefinite" path="M94 50 A44 18 0 1 1 6 50 A44 18 0 1 1 94 50"/>
+          </circle>
+        </g>
+      </symbol>
+      <symbol id="mark-mono" viewBox="0 0 100 100">
+        <g transform="rotate(-30 50 50)">
+          <ellipse cx="50" cy="50" rx="44" ry="18" fill="none" stroke="#fff" stroke-width="6"/>
+          <circle cx="50" cy="50" r="20" fill="#fff"/>
+          <circle cx="94" cy="50" r="7" fill="#fde68a"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <section class="hero">
+    <svg width="120" height="120"><use href="#mark"/></svg>
+    <div class="word">orbitra</div>
+  </section>
+
+  <div class="grid">
+    <div class="tile dark">
+      <svg width="60" height="60"><use href="#mark"/></svg>
+      <div class="word" style="font-size:30px">orbitra</div>
+    </div>
+    <div class="tile brand">
+      <svg width="88" height="88"><use href="#mark-mono"/></svg>
+    </div>
+    <div class="tile sizes">
+      <svg width="64" height="64"><use href="#mark"/></svg>
+      <svg width="32" height="32"><use href="#mark"/></svg>
+      <svg width="16" height="16"><use href="#mark"/></svg>
+    </div>
+  </div>
+
+  <p>A core with an orbiting satellite: "an ecosystem around a small core". Suits a framework, runtime or orchestration tool. Purple→pink gradient, the moon slowly orbits.</p>
+</main>
+</body>
+</html>
