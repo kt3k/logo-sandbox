@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>twill — Idea 4</title>
+<style>
+  :root { --ink:#4c0519; --muted:#64748b; --bg:#fff1f2; --card:#fff; --line:rgba(0,0,0,.08); }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width:960px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:14px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 24px; }
+  .hero { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:64px 24px; display:flex; align-items:center; justify-content:center; gap:28px; flex-wrap:wrap; }
+  .word { font-family:system-ui,-apple-system,"Segoe UI",sans-serif; font-size:64px; font-weight:800; letter-spacing:-.04em; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-top:16px; }
+  .tile { border-radius:16px; padding:32px; display:flex; align-items:center; justify-content:center; gap:12px; min-height:160px; border:1px solid var(--line); }
+  .dark { background:#0b0f19; color:#f8fafc; border-color:#0b0f19; }
+  .brand { background:#e11d48; border-color:#e11d48; }
+  .sizes { background:var(--card); }
+  p { color:var(--muted); line-height:1.7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>twill · Idea 4 · class stack — slanted utility classes</h1>
+
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      
+      <symbol id="mark" viewBox="0 0 100 100"><g transform="translate(20 0) skewX(-20)"><rect x="14" y="12" width="58" height="14" rx="7" fill="var(--a,#be123c)"/><rect x="18" y="32" width="40" height="14" rx="7" fill="var(--b,#e11d48)"/><rect x="22" y="52" width="66" height="14" rx="7" fill="var(--c,#fb7185)"/><rect x="26" y="72" width="32" height="14" rx="7" fill="var(--d,#fda4af)"/></g></symbol>
+    </defs>
+  </svg>
+
+  <section class="hero">
+    <svg width="120" height="120"><use href="#mark"/></svg>
+    <div class="word"><i style="letter-spacing:-.02em">twill</i></div>
+  </section>
+
+  <div class="grid">
+    <div class="tile dark">
+      <svg width="56" height="56" style="--a:#fb7185;--b:#fda4af;--c:#fecdd3;--d:#ffe4e6"><use href="#mark"/></svg>
+      <div class="word" style="font-size:32px"><i style="letter-spacing:-.02em">twill</i></div>
+    </div>
+    <div class="tile brand">
+      <svg width="88" height="88" style="--a:#fff;--b:rgba(255,255,255,.8);--c:rgba(255,255,255,.6);--d:rgba(255,255,255,.4)"><use href="#mark"/></svg>
+    </div>
+    <div class="tile sizes">
+      <svg width="64" height="64"><use href="#mark"/></svg>
+      <svg width="32" height="32"><use href="#mark"/></svg>
+      <svg width="16" height="16"><use href="#mark"/></svg>
+    </div>
+  </div>
+
+  <p>Pills of different lengths stacked like the classes in a class="..." attribute, all slanted at the same angle as twill's diagonal lines. An italic wordmark adds a sense of speed ("write quickly").</p>
+</main>
+</body>
+</html>
